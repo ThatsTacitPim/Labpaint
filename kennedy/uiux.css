@@ -1,0 +1,28 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana;
+    }
+    body {
+        display: grid;
+        background-color: var(--cor-alternada1);
+        grid-template-columns: 1fr 1fr;
+    }
+    section {
+        background-color: var(--cor-alternada2);
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+    .estilo-botao {
+        background-color: rgb(66, 189, 247);
+        border: none;
+        border-radius: 5px;
+        padding: 0.5rem;
+        text-decoration: none;
+        color: black;
+    }
+    .estilo-botao:hover {
+        background-color: rgb(87, 170, 218);
+    }

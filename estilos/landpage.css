@@ -1,0 +1,68 @@
+/* Container substitui body e tem rolagem magnética (snap) */
+#container {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-type: y proximity;
+    overflow-y: auto;
+}
+
+/* Seções-página (seção1, seção2, seção3) */
+.section-pagina {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+/* Div do conteúdo principal (rosa) */
+.conteudo-centralizado {
+    background-color: rgb(236, 160, 255);
+    height: 100%;
+    margin: 5% var(--espaco-horizontal);
+}
+
+/* Cores de fundo das seções-página */
+.cor-fundo-escura {
+    background-color: var(--cor-alternada1);
+}
+.cor-fundo-clara {
+    background-color: var(--cor-alternada2);
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: rgb(76, 76, 238);
+    /* NÃO MODIFICAR O TAMANHO DO HEADER, JÁ ESTÁ RESPONSIVO */
+    height: 6vh;
+    max-height: 150px;
+    min-height: 65px;
+    padding: 0 var(--espaco-horizontal);
+}
+
+/* Estilos da barra de navegação */
+nav {
+    background-color: rgb(0, 183, 255);
+    padding: 0 var(--espaco-horizontal);
+}
+
+/* Seção hero (hero-content) */
+#section-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* Div do conteúdo hero */
+.hero-centralizado {
+    background-color: rgb(236, 160, 255);
+    height: 100%;
+    margin: 0 var(--espaco-horizontal);
+}
+#text-hero {
+    background-color: rgb(219, 148, 55);
+}
+#image-hero {
+    background-color: rgb(255, 237, 74);
+}
+
+/* Footer */
+footer {
+    background-color: rgb(59, 59, 59);
+}
