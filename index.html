@@ -9,6 +9,18 @@
      <link rel="stylesheet" href="./estilos/estilo-global.css">
      <link rel="stylesheet" href="./estilos/landpage.css">
 
+     <style>
+        .container-card {
+            display: flex;
+            flex-direction: row;
+            background-color: blue;
+            height: 100%;
+        }
+        .card {
+            margin: auto;
+            background-color: yellow;
+        }
+     </style>
 </head>
 <body>
     <!-- Container que segura as seções -->
@@ -29,7 +41,18 @@
 
         <!-- == Seção2 main-content == -->
         <section class="cor-fundo-clara section-pagina">
-            <div class="conteudo-centralizado">main-content (Conteúdo principal)</div>
+            <div class="conteudo-centralizado">
+                <!-- Cards -->
+                <div class="subtexto">
+                    <p>- nossos produtos</p>
+                    <h1>Finalizações Detalhadas</h1>
+                    quatro tipos de coating para o seu automóvel
+                </div>
+                <div class="container-card">
+                    <section class="card">card1</section>
+                    <section class="card">card2</section>
+                </div>
+            </div>
         </section>
 
         <!-- == Seção3 main-content + footer == -->
