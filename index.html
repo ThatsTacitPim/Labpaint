@@ -11,31 +11,28 @@
 
      <style>
         .container-card {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
             background-color: blue;
             height: 100%;
-            overflow: auto;
+            flex-wrap: wrap;
         }
         .card {
-            margin: auto;
-            background-color: yellow;
             display: flex;
             flex-direction: column;
             border-radius: 5px;
             border: solid grey 2px;
-            background-size: contain;
-            max-width: ;
+            background-color: burlywood;
+            height: auto;
+            width: 400px;
+            margin-block: 10px;
         }
         .card img {
-            height: 200px;
             object-fit: cover;
         }
-        @media (max-width: 1000px) {
-            .container-card {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
+
      </style>
 </head>
 <body>
