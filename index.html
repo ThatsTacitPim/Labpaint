@@ -11,14 +11,30 @@
 
      <style>
         .container-card {
-            display: flex;
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
             background-color: blue;
             height: 100%;
+            overflow: auto;
         }
         .card {
             margin: auto;
             background-color: yellow;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            border: solid grey 2px;
+            background-size: contain;
+            max-width: ;
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        @media (max-width: 1000px) {
+            .container-card {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
      </style>
 </head>
@@ -48,9 +64,23 @@
                     <h1>Finalizações Detalhadas</h1>
                     quatro tipos de coating para o seu automóvel
                 </div>
-                <div class="container-card">
-                    <section class="card">card1</section>
-                    <section class="card">card2</section>
+                <div class="container-card" id="card">
+                    <section class="card">
+                        <img src="./kennedy/images/Card_metalic-gloss.png">
+                        card1
+                    </section>
+                    <section class="card">
+                        <img src="./kennedy/images/Card_metalic-gloss.png">
+                        card2
+                    </section>
+                    <section class="card">
+                        <img src="./kennedy/images/Card_metalic-gloss.png">
+                        card3
+                    </section>
+                    <section class="card">
+                        <img src="./kennedy/images/Card_metalic-gloss.png">
+                        card4
+                    </section>
                 </div>
             </div>
         </section>

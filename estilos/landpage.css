@@ -1,8 +1,7 @@
 /* Container substitui body e tem rolagem magnética (snap) */
 #container {
     width: 100vw;
-    height: 100vh;
-    scroll-snap-type: y proximity;
+    /* scroll-snap-type: y proximity; */
     overflow-y: auto;
 }
 
@@ -15,6 +14,8 @@
 }
 /* Div do conteúdo principal (rosa) */
 .conteudo-centralizado {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(236, 160, 255);
     height: 100%;
     margin: 5% var(--espaco-horizontal);
