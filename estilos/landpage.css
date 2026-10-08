@@ -1,6 +1,8 @@
 /* Container substitui body e tem rolagem magnética (snap) */
 #container {
-    scroll-snap-type: both mandatory;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
 }
 
 /* Seções-página (seção1, seção2, seção3) */
@@ -8,14 +10,16 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
+    /* width: 100vw; Problema de rolagem horizontal*/
     scroll-snap-align: start;
 }
 /* Div do conteúdo principal (rosa) */
 .conteudo-centralizado {
     display: flex;
     flex-direction: column;
-    background-color: rgb(236, 160, 255);
-    height: 100vh;
+    flex: 1;
+    background-color: #eca0ff;
+    height: 100%;
     margin: 50px var(--espaco-horizontal); 
     /* Adicionar media query pra compensar valores fixos (antes: 100%) - Kennedy */
 }
