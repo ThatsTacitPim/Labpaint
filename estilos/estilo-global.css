@@ -3,7 +3,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    font-family:Verdana;
+    font-family: Verdana;
 }
 
 /* VARIÁVEIS GLOBAIS */
@@ -14,11 +14,24 @@
     --cor-alternada1: #06070a;
     --cor-alternada2: #0e1116;
 */
+    /* Espaçamento entre laterais da página em main-content */
+    --espaco-horizontal: 40px;
+
+    /* Duração de animação */
+    --duracao-animacao: 0.3s;
 
     /* Tema claro */
-    --espaco-horizontal: 40px;
+    /* Fundo */
     --cor-alternada1: #d2dce7;
     --cor-alternada2: #FFFFFF;
+    --cor-sombra: rgb(191, 201, 206);
+
+    /* Card */
+    --cor-card: white;
+
+    /* Botão e link */
+    --cor-botao: rgb(66, 189, 247);
+    --cor-botao-hover: rgb(87, 170, 218);
 }
 
 /* Definições globais de body */

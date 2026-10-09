@@ -1,28 +1,56 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Verdana;
+/* Button */
+.estilo-botao {
+    background-color: var(--cor-botao);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: black;
+
+    /* Transição de Animação */
+    transition: background-color var(--duracao-animacao) ease;
+}
+.estilo-botao:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+/* Card */
+.container-card {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    background-color: var(--cor-card);
+    flex: 1;
+    margin-inline: 10px;
+    margin-block: 7px;
+    box-shadow: 0 1px 10px -1px var(--cor-sombra);
+    overflow: hidden;
+    max-width: 35vw;
+    min-width: 140px;
+}
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+.card ul {
+    list-style-position: inside;
+}
+
+/* Define responsividade para os layouts em aspecto de retrato */
+@media (orientation: portrait) {
+    .card {
+        max-width: 40vw;
     }
-    body {
-        display: grid;
-        background-color: var(--cor-alternada1);
-        grid-template-columns: 1fr 1fr;
+    .card img {
+        aspect-ratio: initial;
     }
-    section {
-        background-color: var(--cor-alternada2);
-        margin: 10px;
-        padding: 10px;
-        text-align: center;
-    }
-    .estilo-botao {
-        background-color: rgb(66, 189, 247);
-        border: none;
-        border-radius: 5px;
-        padding: 0.5rem;
-        text-decoration: none;
-        color: black;
-    }
-    .estilo-botao:hover {
-        background-color: rgb(87, 170, 218);
-    }
+}

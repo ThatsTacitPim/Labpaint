@@ -9,12 +9,54 @@
 
     <!-- Ui/Ux stylesheet -->
     <link rel="stylesheet" href="./uiux.css">
+    <style>
+        #uiux-page {
+            display: grid;
+            background-color: var(--cor-alternada1);
+            grid-template-columns: 1fr;
+        }
+        body > section {
+            background-color: var(--cor-alternada2);
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
 </head>
-<body>
+<body id="uiux-page">
+    <!-- Button -->
     <section>
         <h2>Button</h2>
         <button class="estilo-botao">Botão</button>
         <a class="estilo-botao" href="#">Link</a>
+    </section>
+    <!-- Card -->
+    <section>
+        <h2>Card</h2>
+        <div class="container-card">
+            <section class="card">
+                <img src="./images/Card_metalic-gloss.png">
+                <strong style="font-size: 1.5rem;">Title Card1</strong>
+                    <ul>
+                        <li>list description</li>
+                    </ul>
+            </section>
+            <section class="card">
+                <img src="./images/Card_metalic-gloss.png">
+                <strong style="font-size: 1.5rem;">Title Card2</strong>
+                    <ul>
+                        <li>list description</li>
+                    </ul>
+            </section>
+            <section class="card">
+                <img src="./images/Card_metalic-gloss.png">
+                <strong style="font-size: 1.5rem;">Title Card3</strong>
+                    <ul>
+                        <li>list description</li>
+                    </ul>
+            </section>
+        </div>
     </section>
 </body>
 </html>
