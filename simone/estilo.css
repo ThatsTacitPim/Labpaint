@@ -1,0 +1,98 @@
+/* CONFIGURAÇÃO GERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222222;
+    background-color: #f4f7f6;
+}
+
+/* CONTEÚDO DE EXEMPLO */
+.conteudo {
+    max-width: 1200px;
+    min-height: 240px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* RODAPÉ */
+.footer {
+    margin-top: 50px;
+    background-color: #15191e;
+    color: #ffffff;
+    border-top: 4px solid #e63946;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.footer-col h3 {
+    margin: 0 0 20px;
+    color: #e63946;
+    font-size: 18px;
+}
+
+.footer-col p {
+    margin: 0 0 10px;
+    color: #cccccc;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.logo {
+    margin: 0 0 15px;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.logo span {
+    color: #e63946;
+}
+
+.footer-col ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-col li {
+    margin-bottom: 12px;
+}
+
+.footer-col a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-col a:hover,
+.footer-col a:focus-visible {
+    color: #e63946;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    padding: 20px;
+    border-top: 1px solid #383d44;
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+/* TABLETS E CELULARES */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        text-align: center;
+    }
+}
