@@ -20,24 +20,33 @@
     /* Duração de animação */
     --duracao-animacao: 0.3s;
 
+    /* Temas global */
+    --cor-ui: #00F0FF;
+    --cor-fundo: #06070A;
+    --cor-fora: #0E1116;
+    --cor-card: #161A22;
+    --cor-texto: #FFFFFF;
+    --cor-link: #8F9CAE;
+    --cor-borda: #1E242F;
+
     /* Tema claro */
     /* Fundo */
-    --cor-alternada1: #d2dce7;
+    /* --cor-alternada1: #d2dce7;
     --cor-alternada2: #FFFFFF;
-    --cor-sombra: rgb(191, 201, 206);
-
-    /* Card */
-    --cor-card: white;
+    --cor-sombra: rgb(191, 201, 206); */
+    --cor-alternada1: var(--cor-fundo);
+    --cor-alternada2: var(--cor-fora);
+    --cor-sombra: black;
 
     /* Botão e link */
-    --cor-botao: rgb(66, 189, 247);
+    --cor-botao: var(--cor-ui);
     --cor-botao-hover: rgb(87, 170, 218);
 }
 
 /* Definições globais de body */
 body {
-    color: black;
-    background-color: gray;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
     display: flex;
     justify-content: center;
 }

@@ -18,7 +18,6 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-color: #eca0ff;
     height: 100%;
     margin: 50px var(--espaco-horizontal); 
     /* Adicionar media query pra compensar valores fixos (antes: 100%) - Kennedy */
@@ -26,10 +25,10 @@
 
 /* Cores de fundo das seções-página */
 .cor-fundo-escura {
-    background-color: var(--cor-alternada1);
+    background-color: var(--cor-fundo);
 }
 .cor-fundo-clara {
-    background-color: var(--cor-alternada2);
+    background-color: var(--cor-fora);
 }
 
 /* Estilos do cabeçalho */
@@ -64,6 +63,17 @@ nav {
 }
 #image-hero {
     background-color: rgb(255, 237, 74);
+}
+
+.card ul {
+    margin: 10px;
+}
+
+.subtexto span {
+    color: var(--cor-ui);
+}
+.subtexto p {
+    color: var(--cor-link);
 }
 
 /* Footer */

@@ -41,14 +41,29 @@
     width: 100%;
     object-fit: cover;
 }
+
+.card strong {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
 .card ul {
     list-style-position: inside;
+}
+
+.card ul * {
+    color: var(--cor-link);
 }
 
 /* Define responsividade para os layouts em aspecto de retrato */
 @media (orientation: portrait) {
     .card {
         max-width: 40vw;
+        font-size: 2cqw;
+    }
+    .card strong {
+        font-size: 3cqw;
     }
     .card img {
         aspect-ratio: initial;
