@@ -1,9 +1,12 @@
-nav{
-    background-color: #080a0d;
+/*OBS: Substituí todos os seletores 'nav' pela sua classe .barra-navegacao
+pois se uma página possuir mais de uma tag nav, todas irão ser afetadas pelo estilo */
+
+.barra-navegacao{
+    background-color: var(--cor-fundo);
     padding: 15px;
 }
 
-nav ul{
+.barra-navegacao ul{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,20 +14,20 @@ nav ul{
     list-style: none;
 }
 
-nav ul li a{
-    color: #c5cbd1;
+.barra-navegacao ul li a{
+    color: var(--cor-link);
     text-decoration: none;
     font-size: 14px;
     font-family: Arial, sans-serif;
     transition: color 0.3s;
 }
 
-nav ul li a:hover{
-    color: #65e8f2;
+.barra-navegacao ul li a:hover{
+    color: var(--cor-ui);
 }
 
 @media (max-width: 600px) {
-    nav ul {
+    .barra-navegacao ul {
         flex-wrap: wrap;
         gap: 20px;
     }
