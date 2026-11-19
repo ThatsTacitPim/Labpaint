@@ -1,0 +1,21 @@
+.footer-lapbpaint {
+    width: 100%;
+    min-height: 76px;
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #101116;
+    color: #9299a8;
+    font-size: 13px;
+    line-height: 1.35;
+}
+
+@media (max-width: 600px) {
+    .footer-lapbpaint {
+        padding: 16px 10px;
+        font-size: 13px;
+    }
+}
