@@ -1,0 +1,34 @@
+/*OBS: Substituí todos os seletores 'nav' pela sua classe .barra-navegacao
+pois se uma página possuir mais de uma tag nav, todas irão ser afetadas pelo estilo */
+
+.barra-navegacao{
+    background-color: var(--cor-fundo);
+    padding: 15px;
+}
+
+.barra-navegacao ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    list-style: none;
+}
+
+.barra-navegacao ul li a{
+    color: var(--cor-link);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s;
+}
+
+.barra-navegacao ul li a:hover{
+    color: var(--cor-ui);
+}
+
+@media (max-width: 600px) {
+    .barra-navegacao ul {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
