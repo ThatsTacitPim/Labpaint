@@ -1,0 +1,183 @@
+/* Modifiquei o .search-container para ocupar o espaço disponível para se adaptar à responsividade da página na versão mobile*/
+/* ==============================
+   HEADER
+============================== */
+
+.site-header {
+    width: 100%;
+    min-height: 88px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    background: var(--cor-fundo);
+
+    border-top: 1px solid var(--cor-borda);
+    border-bottom: 1px solid var(--cor-borda);
+
+    gap: 30px;
+
+}
+
+/* ==============================
+   ESPAÇO ESQUERDO
+============================== */
+
+.header-spacer {
+    width: 150px;
+    flex-shrink: 0;
+}
+
+
+/* ==============================
+   PESQUISA
+============================== */
+
+.search-container {
+    display: flex;
+
+    width: 100%;
+    max-width: 700px;
+
+    height: 46px;
+
+    border: 1px solid var(--cor-borda);
+
+    background: var(--cor-fora);
+
+    border-radius: 4px;
+
+    overflow: hidden;
+}
+
+.search-input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 0 18px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: var(--cor-texto);
+
+    font-size: 14px;
+}
+
+.search-input::placeholder {
+    color: var(--cor-link);
+}
+
+
+/* BOTÃO LUPA */
+
+.search-button {
+    width: 82px;
+
+    border: none;
+
+    background: var(--cor-ui);
+
+    color: var(--cor-fundo);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.search-button:hover {
+    background: var(--cor-ui-hover);
+}
+
+
+/* ==============================
+   NAVEGAÇÃO
+============================== */
+
+.main-nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 34px;
+
+    white-space: nowrap;
+}
+
+.main-nav a {
+    color: var(--cor-link);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: color 0.2s ease;
+}
+
+.main-nav a:hover {
+    color: var(--cor-ui);
+}
+
+
+/* ==============================
+   CARRINHO
+============================== */
+
+.cart-button {
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 125px;
+    height: 44px;
+
+    padding: 0 22px;
+
+    border-radius: 5px;
+
+    background: #55dff7;
+
+    color: #061014;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    transition: 0.2s ease;
+}
+
+.cart-button:hover {
+    background: #72e7fa;
+
+    transform: translateY(-1px);
+}
+
+@media (max-width: 1300px) {
+    .contato {
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    .main-nav {
+        display: none;
+    }
+}

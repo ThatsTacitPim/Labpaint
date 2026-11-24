@@ -31,12 +31,11 @@ a classe 'footer' pra colocar tudo dentro de um card */
 }
 
 .logo {
-    margin-bottom: 15px;
     color: #ffffff;
     font-size: 28px;
 }
 
-.logo span {
+.logo > span {
     color: var(--cor-ui);
 }
 
