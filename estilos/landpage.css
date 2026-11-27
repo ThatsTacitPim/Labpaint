@@ -43,7 +43,6 @@ header {
 
 /* Estilos da barra de navegação */
 nav {
-    background-color: rgb(0, 183, 255);
     padding: 0 var(--espaco-horizontal);
 }
 

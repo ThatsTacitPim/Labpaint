@@ -7,19 +7,57 @@
 
     <!-- Folhas de estilo -->
     <link rel="stylesheet" href="./estilos/estilo-global.css">
+    <link rel="stylesheet" href="./kennedy/uiux.css">
     <link rel="stylesheet" href="./estilos/landpage.css">
     <link rel="stylesheet" href="./kennedy/uiux.css">
+    <link rel="stylesheet" href="./emerson/estilo.css">
+    <link rel="stylesheet" href="./eduarda/style.css">
+    <link rel="stylesheet" href="./simone/estilo.css">
+    <link rel="stylesheet" href="./vera/style.css">
 </head>
 <body>
-    <!-- Container que segura as seções -->
+    <!-- Container que segura as Seções -->
     <div id="container">
 
         <!-- == Seção1  header + nav-bar + hero-section (primeira seção visível do site) == -->
         <section class="cor-fundo-escura section-pagina">
             <!--1. Cabeçalho -->
-            <header>header (cabeçalho)</header>
+            <header class="site-header">
+                <div class="logo">
+                    <h2 class="logo">Lab<span>Paint</span></h2>
+                </div>
+                <div class="contato">
+                    <p>Telefone: (81) 3444-4444</p>
+                    <p>E-mail: contato@labpaint.com.br</p>
+                </div>
+                <div class="search-container">
+                    <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Buscar Tintas"
+                    >
+                    <button class="search-button">
+                    Buscar
+                    </button>
+
+                </div>
+                
+                <nav class="main-nav">
+                    
+                    <a href="#">Buscar</a>
+                    <a href="#">Link2</a>
+                    <a href="#">Link3</a>
+
+            </header>
             <!--2. Barra de navegação -->
-            <nav>nav-bar (Barra de navegação)</nav>
+            <nav class="barra-navegacao">
+                <ul>
+                    <li><a href="#">Acessórios</a></li>
+                    <li><a href="#">Marcas</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                </ul>
+            </nav>
             <!--3. Seção Hero com imagem de amostra -->
             <div id="section-hero" class="hero-centralizado">
                 <div id="text-hero">seção hero (conteúdo principal do hero-section)</div>
@@ -62,7 +100,7 @@
                         <img src="./kennedy/images/card-matte-liquido.png" alt="Image description">
                         <strong>Matte líquido</strong>
                         <ul>
-                            <li>Ipsum dolor sit amet consecteurat disAute fugiat adipisicing.</li>
+                            <li>Ipsum dolor sit amet consecteur at disAute fugiat adipisicing.</li>
                         </ul>
                     </section>
                 </div>
@@ -71,8 +109,47 @@
 
         <!-- == Seção3 main-content + footer == -->
         <section class="cor-fundo-escura section-pagina">
-            <div class="conteudo-centralizado">main-content (Conteúdo principal com footer)</div>
-            <footer>footer (Rodapé do site contendo as informações)</footer>
+            <div class="conteudo-centralizado footer-content">
+                    <section class="card">
+                        <div class="footer-container">
+                            <div class="footer-col">
+                                <h2 class="logo" style="margin-bottom: 15px;">Lab<span>Paint</span></h2>
+                                <p>
+                                    Qualidade e tecnologia em tintas automotivas.
+                                    As melhores soluções para renovar e proteger
+                                    a pintura do seu veículo.
+                                </p>
+                            </div>
+
+                            <nav class="footer-col">
+                                <h3>Links rápidos</h3>
+                                <ul>
+                                    <li><a href="index.html">Início</a></li>
+                                    <li><a href="#produtos">Produtos</a></li>
+                                    <li><a href="#servicos">Serviços</a></li>
+                                    <li><a href="#contato">Contato</a></li>
+                                </ul>
+                            </nav>
+
+                            <div class="footer-col">
+                                <h3>Fale Conosco</h3>
+                                <p>Telefone: (81) 3444-4444</p>
+                                <p>E-mail: contato@labpaint.com.br</p>
+                                <p>Atendimento: Segunda a Sexta, das 8h às 18h e 
+                                    Sábado, das 8h às 13h
+                                </p>
+                            </div>
+                        </div>
+                </section>
+            </div>
+            <footer class="footer-lapbpaint">
+                <p>
+                    &copy;2026 LabPaint Tintas Automotivas.
+                </p>
+                <p>
+                    Todos os Direitos Reservados.
+                </p>
+            </footer>
         </section>
 
     </div>

@@ -1,0 +1,69 @@
+/* Removi Body, conteudo de exemplo, e o footer que era
+trabalho de outro ramo padronizei as cores e troquei
+a classe 'footer' pra colocar tudo dentro de um card */
+
+
+/* RODAPÉ */
+.footer-content .card {
+    border-top: 3px solid var(--cor-ui);
+    max-width: initial;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.footer-col h3 {
+    margin: 0 0 20px;
+    color: var(--cor-ui);
+    font-size: 18px;
+}
+
+.footer-col p {
+    margin: 0 0 10px;
+    color: var(--cor-link);
+    line-height: 1.7;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.logo > span {
+    color: var(--cor-ui);
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col li {
+    margin-bottom: 12px;
+}
+
+.footer-col a {
+    color: var(--cor-link);
+    text-decoration: none;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-col a:hover,
+.footer-col a:focus-visible {
+    color: var(--cor-ui);
+    padding-left: 5px;
+}
+
+/* TABLETS E CELULARES */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        text-align: center;
+    }
+}
